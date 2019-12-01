@@ -37,7 +37,11 @@ void listdir(const char *name, int indent, string& key)
 
 int main(void) {
     string key;
+    cout << "Key: ";
     cin >> key;
-    listdir(".", 0, key);
+    string position_to_start;
+    cout << '\n' << "Position to start: ";
+    cin >> position_to_start;
+    listdir(position_to_start.c_str(), 0, key);
     return 0;
 }
